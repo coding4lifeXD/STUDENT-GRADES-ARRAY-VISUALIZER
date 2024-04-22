@@ -82,7 +82,7 @@ function mainMenu() {
     } else if (selection == 'addRandom') {
         // Add a random grade between 0 and 100 to the end of the array.
         let randomGrade = Math.floor(Math.random() * 100)
-        grades.splice(grades.length - 1, 1, randomGrade )
+        grades.push(randomGrade)
         outputEl.innerHTML = 'Add random grade';
     } else if (selection == 'removeLast') {
         // Remove the last grade.
